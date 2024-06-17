@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./assets/laptoprosa.webp">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https: //fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="encabezado">
+        <nav class="navegacion">
+            <a class="navegacion__enlace" href="#presentacion">
+                <h2 class="navegacion__titulo">Portfolio</h2>
+            </a>
+            <ul class="enlaces">
+                <li class="enlaces__item">
+                    <a class="enlaces_enlace" href="#presentacion">Inicio</a>
+                </li>
+                 <li class="enlaces__item">
+                     <a class="enlaces_enlace" href="#sobre-mi">Sobre mi</a>
+                </li>   
+                <li class="enlaces__item"> 
+                    <a class="enlaces__enlace" href="#proyectos">Proyectos</a>
+                </li>    
+            </ul>
+        </nav>
+    </header>
+    <main class="principal">
+        <section class="presentacion" id="presentacion">
+            <div class="presentacion__contenedor_info">  
+                <h1 class="presentacion__titulo">Silvana Maidana</h1>
+                <p>"Primero lo crees y luego lo creas".</p>
+                  <p>Creadora de páginas web desde cero.</p>
+                <div class="presentacion__contenedor_botones">
+                    <a href="#sobre-mi" class="boton" role="button">Sobre mí</a>
+                    <a href="./assets/docs/cv.pdf" target="_blank" class="boton boton_oscuro" role="button">descargar CV</a>
+                </div>
+            </div>
+        </section> 
+        <article class="articulo sobre_mi" id="sobre-mi">
+            <h2 class="articulo__titulo">Un poco sobre mi</h2>
+            <div class="articulo__contenedor_descripciones">
+              <section class="seccion_descripcion">
+                <div class="seccion_descripcion__porta_retrato">
+                  <img
+                    class="seccion_descripcion__imagen"
+                    src="./assets/images/profile/escribirencomputadora.jpg"
+                    alt="foto trabajando en la oficina"
+                    title="trabajando en la oficina"
+                  />
+                </div>
+                <div
+                  class="seccion_descripcion__info scroll scroll_fino scroll_gris"
+                  aria-label="descripcion personal"
+                >
+                  <h3 class="seccion_descripcion__titulo" id="mi_historia_titulo">
+                  Mi historia
+                  </h3>
+                  <p
+                    class="seccion_descripcion__parrafo"
+                    aria-label="Detalles de mi historia"
+                    aria-describedby="mi_historia_titulo"
+                  >
+                </p>Desde muy pequeña siento que el mundo de la tecnología es sorprendente y esto es lo que me motivó a estudiar para luego dar mis primeros pasos como desarrolladora en HTML, CSS.</p>
+                <p>A lo largo de varios años me he perfeccionado como programadora en el desarrollo Full Stack.</p>
+                  <p
+                    class="seccion_descripcion__parrafo"
+                    aria-label="Detalles de mi historia"
+                    aria-describedby="mi_historia_titulo"
+                  >
+                  También me he encargado de crear y mantener las partes de front y back end de distintas aplicaciones web, con polivalencia para el conocimiento de lenguajes de programación y sistemas operativos. 
+                  </p>
+                  <p
+                    class="seccion_descripcion__parrafo"
+                    aria-label="Detalles de mi historia"
+                    aria-describedby="mi_historia_titulo"
+                  >
+                  Uno de mis objetivos principales es el de coordinar los procesos de desarrollo y producción de software. Otro objetivo fundamental como desarrolladora, es que cada vez que se presenta un nuevo proyecto, se convierte en un desafio, el cual me permite mejorar mis capacidades y me motiva a la continua innovación.
+                  </p>
+                  <p
+                    class="seccion_descripcion__parrafo"
+                    aria-label="Detalles de mi historia"
+                    aria-describedby="mi_historia_titulo"
+                  >Decidí ser una desarrolladora Full Stack porque es alguien que trabaja tanto con el front-end como con el back-end de una aplicación web. El front-end es responsable de la apariencia visual del sitio web, mientras que el back-end es responsable de la lógica y la infraestructura detrás de escena del sitio.
+                  
+                  </p>
+                </div>
+              </section>
+              
+              <section class="seccion_descripcion">
+                <div
+                  class="seccion_descripcion__info scroll scroll_fino scroll_gris"
+                  aria-label="descripcion personal"
+                >
+                  <h3 class="seccion_descripcion__titulo" id="mis_hobbies_titulo">
+                  Mis hobbies
+                  </h3>
+                  <p
+                    class="seccion_descripcion__parrafo"
+                    aria-label="Detalles de mis hobbies"
+                    aria-describedby="mis_hobbies_titulo"
+                  >
+                   Aparte de ser desarrolladora web la mayor parte del tiempo, disfruto mucho de otros hobbies como ser: pintar cuadros, tocar el ukelele y la guitarra, bailar, viajar.
+                  </p>
+                  <p
+                    class="seccion_descripcion__parrafo"
+                    aria-label="Detalles de mis hobbies"
+                    aria-describedby="mis_hobbies_titulo"
+                  >
+                    Además, disfruto salir al aire libre y estar en contacto con la naturaleza.
+                  </p>
+                  
+                </div>
+                <div class="seccion_descripcion__porta_retrato">
+                  <img
+                    class="seccion_descripcion__imagen seccion_descripcion__imagen_variante"
+                    src="./assets/images/profile/pintar.jpg"
+                    alt="foto mientras me encontraba en una reunion de trabajo"
+                    title="selfie en una reunion"
+                  />
+                </div>
+              </section>
+            </div>
+          </article>
+          <article class="articulo proyectos" id="proyectos">
+            <h2 class="articulo__titulo">Mis proyectos</h2>
+            <div class="contenedor_tarjetas_grid">
+              <article
+                class="tarjeta"
+                aria-label="presentacion de proyecto personal"
+              >
+                <img
+                  class="tarjeta__imagen"
+                  src="./assets/images/proyectos/mis trabajos.jpeg"
+                  alt="imagen del proyecto"
+                  title="proyecto 1"
+                />
+                <div class="tarjeta__contenido">
+                  <h3 class="tarjeta__titulo" id="titulo_proyecto_1">Página Web</h3>
+                  <span class="tarjeta__divisor"></span>
+                  <p
+                    class="tarjeta__parrafo scroll scroll_fino"
+                    aria-label="descripcion de proyecto personal"
+                    aria-describedby="titulo_proyecto_1"
+                  >
+                    Este proyecto requiere un buen dominio de tecnologías de diseño, así como conocimiento de CSS, HTML, JavaScript y otros lenguajes de programación.
+                  </p>
+                  <a href="#" class="boton boton_oscuro" target="_blank"
+                    >Ver proyecto</a
+                  >
+                </div>
+              </article>
+              <article
+                class="tarjeta"
+                aria-label="presentacion de proyecto personal"
+              >
+                <img
+                  class="tarjeta__imagen"
+                  src="./assets/images/proyectos/juego1.jpg"
+                  alt="imagen del proyecto"
+                  title="proyecto 2"
+                />
+                <div class="tarjeta__contenido">
+                  <h3 class="tarjeta__titulo" id="titulo_proyecto_2">Juego divertido</h3>
+                  <span class="tarjeta__divisor"></span>
+                  <p
+                    class="tarjeta__parrafo scroll scroll_fino scroll_gris"
+                    aria-label="descripcion de proyecto personal"
+                    aria-describedby="titulo_proyecto_2"
+                  >
+                    Los niños, los adolescentes y los adultos siempre están dispuestos a jugar para divertirse. Este juego divertido te ayuda a mejorar tus capacidades intelectuales y te invita a desarrollar habilidades como el ingenio y la concentraión.
+                  </p>
+                  <a href="#" class="boton" target="_blank">Ver proyecto</a>
+                </div>
+              </article>
+              <article
+                class="tarjeta"
+                aria-label="presentacion de proyecto personal"
+              >
+                <img
+                  class="tarjeta__imagen"
+                  src="./assets/images/proyectos/calculadora.jpeg"
+                  alt="imagen del proyecto"
+                  title="proyecto 3"
+                />
+                <div class="tarjeta__contenido">
+                  <h3 class="tarjeta__titulo" id="titulo_proyecto_3">Calculadora</h3>
+                  <span class="tarjeta__divisor"></span>
+                  <p
+                    class="tarjeta__parrafo scroll scroll_fino"
+                    aria-label="descripcion de proyecto personal"
+                    aria-describedby="titulo_proyecto_3"
+                  >
+                   En la actualidad el uso de la calculadora suele ser de mucha utilidad. Aunque la tecnología nos ha presentado esta herramienta en diferentes formas y colores, los avances tecnológicos permiten crear una calculadora científica en línea, fantástica y gratuita, con funciones avanzadas para evaluar porcentajes, fracciones, funciones exponenciales. Esta es mi primer calculadora creada desde las necesidades que se generan en el día a día. Los avances tecnológicos inspiran a seguir renovando herramientas que se continúan mejorando y adaptando a la vida que nos toca vivir. 
+                  </p>
+                  <a href="#" class="boton boton_oscuro" target="_blank"
+                    >Ver proyecto</a
+                  >  
+       
+        </main>
+
+        <footer class="pie_de_pagina" role="contentinfo">
+          
+          <div class="pie_de_pagina__columna">
+            <h4 class="pie_de_pagina__titulo_columna">Mis redes</h4>
+            <ul class="enlaces enlaces_redes">
+              <li class="enlaces__item">
+                <a
+                  class="enlaces__enlace enlaces__enlace_footer"S
+                  href="https://github.com/Sils3"
+                  target="_blank"
+                  ><img
+                    class="enlaces__icono"
+                    src="./assets/images/logos/github-logo.png"
+                    alt="logo de github"
+                    title="github"
+                /></a>
+              </li>
+              <li class="enlaces__item">
+                <a
+                  class="enlaces__enlace enlaces__enlace_footer"
+                  href="https://www.instagram.com/silmr023/"
+                  target="_blank"
+                >
+                  <img
+                    class="enlaces__icono"
+                    src="./assets/images/logos/ig-logo.png"
+                    alt="logo de instagram"
+                    title="instagram"
+                  />
+          </div>
+          <div class="pie_de_pagina__columna">
+            <h4 class="pie_de_pagina__titulo_columna">Contactame</h4>
+            <ul class="enlaces enlaces_vertical">
+              <li class="enlaces__item">
+                <a
+                  class="enlaces__enlace enlaces__enlace_footer"
+                  href="mailto:mail@mail.com"
+                  target="_blank"
+                  >Mail: silvanasmr2015@gmail.com</a
+                >
+              </li>
+            </ul>
+          </div>
+         
+          <div class="pie_de_pagina__columna" role="navigation">
+            <h4 class="pie_de_pagina__titulo_columna">Secciones</h4>
+            <ul class="enlaces enlaces_vertical">
+              <li class="enlaces__item">
+                <a
+                  class="enlaces__enlace enlaces__enlace_footer"
+                  href="#presentacion"
+                  >Inicio</a
+                >
+              </li>
+              <li class="enlaces__item">
+                <a class="enlaces__enlace enlaces__enlace_footer" href="#sobre-mi"
+                  >Sobre mi</a
+                >
+              </li>
+              <li class="enlaces__item">
+                <a class="enlaces__enlace enlaces__enlace_footer" href="#proyectos"
+                  >Proyectos</a
+                >
+              </li>
+            </ul>
+          </div>
+         
+          <div class="pie_de_pagina__copyright">
+            <p>©️Copyright 2024</p>
+          </div>
+        </footer>
+        
+      </body>
+    </html>
+        
+        </principal>
+        <pie de página clase="pie_de_pagina"role="información de contenido">
+  
+          <div clase="pie_de_pagina__columna">
+            <h4 clase="pie_de_pagina__titulo_columna">Mis redes</h4>
+            <ul clase="enlaces enlaces_redes">
+              <li clase="enlaces__item">
+                <a
+                  clase="enlaces__enlace enlaces__enlace_footer"
+                  href="https://github.com/Sils3"
+                  objetivo="_blanco"
+                  ><imagen
+                    clase="enlaces__icono"
+                    src="./assets/images/logos/github-logo.png"
+                    alternativo="logotipo de github"
+                    título="github"
+                /></a>
+              </li>
+              <li clase="enlaces__item">
+                <a
+                  clase="enlaces__enlace enlaces__enlace_footer"
+                  href="https://www.instagram.com/silmr023/"
+                  objetivo="_blanco"
+                >
+                  <imagen
+                    clase="enlaces__icono"
+                    src="./assets/images/logos/ig-logo.png"
+                    alternativo="logotipo de instagram"
+                    título="Instagram"
+                  />
+          </div>
+          <div clase="pie_de_pagina__columna">
+            <h4 clase="pie_de_pagina__titulo_columna">Contactame</h4>
+            <ul clase="enlaces enlaces_verticales">
+              <li clase="enlaces__item">
+                <a
+                  clase="enlaces__enlace enlaces__enlace_footer"
+                  href="correo a: correo@mail.com"
+                  objetivo="_blanco"
+                  >Correo: mail@mail.com</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div clase="pie_de_pagina__columna"role="navegación">
+            <h4 clase="pie_de_pagina__titulo_columna">Secciones</h4>
+            <ul clase="enlaces enlaces_verticales">
+              <li clase="enlaces__item">
+                <a
+                  clase="enlaces__enlace enlaces__enlace_footer"
+                  href="#presentacion"
+                  >Inicio</a
+                >
+              </li>
+              <li clase="enlaces__item">
+                <a clase="enlaces__enlace enlaces__enlace_footer"href="#sobre-mi"
+                  >Sobre mi</a
+                >
+              </li>
+              <li clase="enlaces__item">
+                <a clase="enlaces__enlace enlaces__enlace_footer"href="#proyectos"
+                  >Proyectos</a
+                >
+              </li>
+            </ul>
+          </div>
+          
+          <div clase="pie_de_pagina__copyright">
+            <pag>©️Copyright 2024</pag>
+          </div>
+        </pie de página>
+       
+      </cuerpo>
+    </HTML>
+    
+    </main> 
+</body> 
+</html>
+
+</section>
